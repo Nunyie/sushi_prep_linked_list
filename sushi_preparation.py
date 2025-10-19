@@ -69,7 +69,7 @@ class LinkedList:
         while current:
             result.append(str(current.data))
             current = current.next
-        return " -> ".join(result)
+        return " -> ".join(result) + " -> None"
     
 # Sample Code
 sushi_preparation = LinkedList()
@@ -78,4 +78,5 @@ sushi_preparation.insert_at_end("roll")
 sushi_preparation.insert_at_beginning("assemble")
 
 # Output
+print("Linked List: ")
 print(sushi_preparation)
